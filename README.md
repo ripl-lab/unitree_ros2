@@ -1,12 +1,16 @@
 # RIPL Fork of unitree_ros2
-Below are a simplified installation instructions. The original Unitree instructions follow.
+Below are a simplified installation instructions.
 
 ## Installation
 Complete the following instructions when installing for the first time.
 
+### Clone
+
 `mkdir ~/git && cd ~/git`
 
 `git clone git@github.com:ripl-lab/unitree_ros2.git`
+
+### Install Dependencies
 
 ```bash
 sudo apt install ros-humble-rmw-cyclonedds-cpp
@@ -14,9 +18,13 @@ sudo apt install ros-humble-rosidl-generator-dds-idl
 sudo apt install libyaml-cpp-dev
 ```
 
+### Build
+
 `cd ~/git/unitree_ros2/cyclonedds_ws`
 
 `colcon build`
+
+### Source
 
 `cd ~/git/unitree_ros2`
 
@@ -33,6 +41,9 @@ The file `setup.sh` needs to be sourced each time to be able to read certain Uni
 or 
 
 `echo 'source ~/git/unitree_ros2/setup_local.sh' >> ~/.bashrc`
+
+---------------------------------------------------
+#  The original Unitree Instructions are Below.
 
 Unitree robot ROS2 support
 
